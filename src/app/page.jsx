@@ -1,18 +1,29 @@
 import React from 'react';
-import ScrollSpinner from '../widgets/ScrollSpinner';
-// import styles from './page.module.css';
+
+import AsciiAnimation from '../widgets/AsciiAnimation';
+import './page.css';
 
 export default function Home() {
   return (
-    <>
-      {/* name, bio, and social media links */}
-      {/* stretchy name footer */}
+    <div id="welcome-page">
+      {/* left vertical center */}
+      <div>
+        <p>
+          Computer Science Student and Teaching Assistant.
+          <br />
+          From Houston, TX.
+          <br />
+          Loves furniture and art.
+        </p>
+      </div>
+
+      {/* background right ascii art video */}
+      <AsciiAnimation />
+
+      {/* cool footer */}
       {/* scroll down to see: */}
       {/*   "completed" projects menu/display */}
       {/*   "in progress" projects menu/display */}
-      <ScrollSpinner />
-      <p>page</p>
-      <div style={{ height: '200vh', backgroundColor: 'red', width: '50vw' }} />
-    </>
+    </div>
   );
 }

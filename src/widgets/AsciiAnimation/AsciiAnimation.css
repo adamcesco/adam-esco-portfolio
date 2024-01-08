@@ -1,10 +1,14 @@
 #flower {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  background-color: #000;
+  position: absolute;
+  right: 0;
+  overflow: auto;
+  white-space: nowrap;
+  font-size: 0.75rem;
 }
 
 #flower > * {
-  font-size: 0.5em;
+  font-family: var(--font-mono);
+  white-space: pre-wrap;
+  margin: 0;
+  padding: 0;
 }

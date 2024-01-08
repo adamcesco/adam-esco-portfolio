@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { AnsiUp } from 'ansi-up';
+import { AnsiUp } from 'ansi_up';
 import asciiFlower from '../../../public/ascii-flower.json';
 import './AsciiAnimation.css';
 
@@ -16,8 +16,6 @@ class AsciiAnimation extends React.Component {
   }
 
   componentDidMount() {
-    console.log((new AnsiUp()).ansi_to_html(asciiFlower[0].data));
-
     this.interval = setInterval(() => {
       const { currentFrameIndex } = this.state;
       let index = currentFrameIndex;
@@ -29,15 +27,12 @@ class AsciiAnimation extends React.Component {
       if (index === asciiFlower.length) {
         index = 0;
       }
-
-      const ansiUp = new AnsiUp();
-
-      this.containerRef.innerHTML = ansiUp.ansi_to_html(asciiFlower[index].data);
+      this.containerRef.innerHTML = (new AnsiUp()).ansi_to_html(asciiFlower[index].data);
 
       this.setState({
         currentFrameIndex: index,
       });
-    }, 1000 / 30); // 30 frames per second
+    }, 5);
   }
 
   componentWillUnmount() {

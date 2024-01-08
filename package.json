@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "ansi_up": "^6.0.2",
     "ansi-up": "^1.0.0",
     "next": "14.0.4",
     "prop-types": "^15.8.1",

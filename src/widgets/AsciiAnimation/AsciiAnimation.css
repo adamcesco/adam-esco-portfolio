@@ -1,21 +1,4 @@
-#container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-
-#container > * {
-  font-family: var(--font-mono);
-  white-space: pre-wrap;
-  margin: 0;
-  padding: 0;
-  display: block;
-  align-self: flex-start;
-
-}
-
-.flower {
+#flower {
   right: 0;
   overflow: auto;
   white-space: nowrap;
@@ -23,6 +6,10 @@
 }
 
 #flower > * {
+  right: 0;
+  overflow: auto;
+  white-space: nowrap;
+  font-size: 0.75rem;
   font-family: var(--font-mono);
   white-space: pre-wrap;
   margin: 0;

@@ -2,47 +2,45 @@
 
 import React from 'react';
 import { AnsiUp } from 'ansi_up';
-import asciiFlower from '../../../public/ascii-flower.json';
+// eslint-disable-next-line import/no-unresolved, import/no-absolute-path
+import asciiFlower from '/public/ascii-flower.json';
 import './AsciiAnimation.css';
 
 class AsciiAnimation extends React.Component {
   constructor(props) {
     super(props);
     this.interval = null;
-    this.containerRef = null;
     this.state = {
       currentFrameIndex: 0,
+      frameData: '',
     };
+    this.ansiUp = new AnsiUp();
   }
 
   componentDidMount() {
     this.interval = setInterval(() => {
+      // time the calculation of this function
+      const start = performance.now();
       const { currentFrameIndex } = this.state;
-      let index = currentFrameIndex;
-
-      // Move to the next frame
-      index += 1;
-
-      // Reset to the first frame if we reach the end
-      if (index === asciiFlower.length) {
-        index = 0;
-      }
-      this.containerRef.innerHTML = (new AnsiUp()).ansi_to_html(asciiFlower[index].data);
+      const index = currentFrameIndex;
 
       this.setState({
-        currentFrameIndex: index,
+        currentFrameIndex: index === asciiFlower.length - 1 ? 0 : index + 1,
+        frameData: this.ansiUp.ansi_to_html(asciiFlower[index].data),
       });
-    }, 5);
+      const end = performance.now();
+      console.log(`Frame ${index} took ${end - start} ms`);
+    }, 1000 / 30);
   }
 
   componentWillUnmount() {
-    // Clean up the interval when the component is unmounted
     clearInterval(this.interval);
   }
 
   render() {
+    const { frameData } = this.state;
     return (
-      <div id="flower" ref={(ref) => { this.containerRef = ref; }} />
+      <div id="flower" dangerouslySetInnerHTML={{ __html: frameData }} />
     );
   }
 }

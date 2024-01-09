@@ -1,3 +1,3 @@
-import AsciiCanvas from './AsciiCanvas';
+import AsciiFlower from './AsciiFlower';
 
-export default AsciiCanvas;
+export default AsciiFlower;

@@ -27,7 +27,7 @@ class AsciiAnimation extends React.Component {
         this.eventSource.close();
         return;
       }
-      const res = this.ansiUp.ansi_to_html(JSON.parse(`"${e.data}"`));
+      const res = this.ansiUp.ansi_to_html(JSON.parse(e.data));
       this.buffer.push(res);
       console.log('buffer length: ', this.buffer.length);
     };

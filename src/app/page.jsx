@@ -1,13 +1,14 @@
 import React from 'react';
 
-import AsciiAnimation from '../widgets/AsciiAnimation';
+// eslint-disable-next-line import/no-unresolved, import/extensions
+import AsciiFlower from '@/widgets/AsciiCalc';
 import './page.css';
 
 export default function Home() {
   return (
     <div id="welcome-page">
       {/* background right ascii art video */}
-      <AsciiAnimation />
+      <AsciiFlower />
 
       {/* left vertical center */}
       <div>

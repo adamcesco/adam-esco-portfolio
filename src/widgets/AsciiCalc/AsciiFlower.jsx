@@ -1,3 +1,5 @@
+'use client';
+
 /* eslint-disable import/extensions */
 import React, { useEffect } from 'react';
 import { run } from './run.js';

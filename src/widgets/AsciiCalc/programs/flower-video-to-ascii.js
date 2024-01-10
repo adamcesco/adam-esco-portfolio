@@ -4,16 +4,137 @@ export const settings = { fps: 60 };
 
 const charMap = [' ', '#', '(', ',', '@', 'S', 'g'];
 
-// eslint-disable-next-line max-len
-const bgMap = [17, 22, 58, 60, 64, 65, 66, 94, 95, 96, 100, 101, 102, 103, 104, 107, 108, 109, 110, 130, 131, 136, 137, 138, 139, 143, 144, 145, 146, 147, 150, 151, 152, 153, 173, 179, 180, 181, 182, 186, 187, 188, 189, 194, 195, 224, 225, 230, 231, 255];
+const bgMap = [
+  '#00005f',
+  '#005f00',
+  '#5f5f00',
+  '#5f5f87',
+  '#5f8700',
+  '#5f875f',
+  '#5f8787',
+  '#875f00',
+  '#875f5f',
+  '#875f87',
+  '#878700',
+  '#87875f',
+  '#878787',
+  '#8787af',
+  '#8787d7',
+  '#87af5f',
+  '#87af87',
+  '#87afaf',
+  '#87afd7',
+  '#af5f00',
+  '#af5f5f',
+  '#af8700',
+  '#af875f',
+  '#af8787',
+  '#af87af',
+  '#afaf5f',
+  '#afaf87',
+  '#afafaf',
+  '#afafd7',
+  '#afafff',
+  '#afd787',
+  '#afd7af',
+  '#afd7d7',
+  '#afd7ff',
+  '#d7875f',
+  '#d7af5f',
+  '#d7af87',
+  '#d7afaf',
+  '#d7afd7',
+  '#d7d787',
+  '#d7d7af',
+  '#d7d7d7',
+  '#d7d7ff',
+  '#d7ffd7',
+  '#d7ffff',
+  '#ffd7d7',
+  '#ffd7ff',
+  '#ffffd7',
+  '#ffffff',
+  '#eeeeee',
+];
 
 // eslint-disable-next-line max-len
-const fgIndexMap = [16, 17, 22, 23, 52, 53, 58, 59, 60, 64, 65, 66, 88, 94, 95, 96, 100, 101, 102, 103, 104, 106, 107, 108, 109, 110, 130, 131, 136, 137, 138, 139, 142, 143, 144, 145, 146, 147, 150, 151, 152, 153, 172, 173, 179, 180, 181, 182, 183, 186, 187, 188, 189, 193, 194, 195, 217, 221, 223, 224, 225, 230, 231];
-
-console.log('1');
+const fgIndexMap = [
+  '#000000',
+  '#00005f',
+  '#005f00',
+  '#005f5f',
+  '#5f0000',
+  '#5f005f',
+  '#5f5f00',
+  '#5f5f5f',
+  '#5f5f87',
+  '#5f8700',
+  '#5f875f',
+  '#5f8787',
+  '#870000',
+  '#875f00',
+  '#875f5f',
+  '#875f87',
+  '#878700',
+  '#87875f',
+  '#878787',
+  '#8787af',
+  '#8787d7',
+  '#87af00',
+  '#87af5f',
+  '#87af87',
+  '#87afaf',
+  '#87afd7',
+  '#af5f00',
+  '#af5f5f',
+  '#af8700',
+  '#af875f',
+  '#af8787',
+  '#af87af',
+  '#afaf00',
+  '#afaf5f',
+  '#afaf87',
+  '#afafaf',
+  '#afafd7',
+  '#afafff',
+  '#afd787',
+  '#afd7af',
+  '#afd7d7',
+  '#afd7ff',
+  '#d78700',
+  '#d7875f',
+  '#d7af5f',
+  '#d7af87',
+  '#d7afaf',
+  '#d7afd7',
+  '#d7afff',
+  '#d7d787',
+  '#d7d7af',
+  '#d7d7d7',
+  '#d7d7ff',
+  '#d7ffaf',
+  '#d7ffd7',
+  '#d7ffff',
+  '#ffafaf',
+  '#ffd75f',
+  '#ffd7af',
+  '#ffd7d7',
+  '#ffd7ff',
+  '#ffffd7',
+  '#ffffff',
+];
 
 export function main(coord, context) {
   const frameIndex = Math.floor(context.frame % 750);
+
+  // add bounds checking for coord
+  if (coord.y >= framesJson[frameIndex].length) {
+    return ' ';
+  }
+  if (coord.x >= framesJson[frameIndex][coord.y].length) {
+    return ' ';
+  }
+
   const res = framesJson[frameIndex][coord.y][coord.x];
   // turn res into a binary string
   const binary = res.charCodeAt(0).toString(2).padStart(8, '0') + res.charCodeAt(1).toString(2).padStart(8, '0');
@@ -23,13 +144,11 @@ export function main(coord, context) {
 
   const bg = bgMap[bgIndex];
   const fg = fgIndexMap[fgIndex];
-  const char = charMap[charIndex];
+  const ch = charMap[charIndex];
 
-  return char;
+  return {
+    char: ch,
+    color: fg,
+    backgroundColor: bg,
+  };
 }
-
-// return {
-//   char: context.frame % 10,
-//   color: `rgb(${r2},${g2},${b2})`,
-//   backgroundColor: `rgb(${r1},${g1},${b1})`,
-// };

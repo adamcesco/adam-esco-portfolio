@@ -1,40 +1,45 @@
 'use client';
 
 /* eslint-disable import/extensions */
-import React, { useEffect } from 'react';
+import React from 'react';
 import { run } from './run.js';
 import * as program from './programs/flower-video-to-ascii.js';
 
-function AsciiFlower() {
-  // create ref to pre element
-  const preRef = React.createRef(null);
+// eslint-disable-next-line react/prop-types
+class AsciiFlower extends React.Component {
+  constructor(props) {
+    super(props);
+    this.preRef = null;
+  }
 
-  useEffect(() => {
-    run(program, { element: preRef.current }).then((e) => {
+  componentDidMount() {
+    run(program, { element: this.preRef }).then((e) => {
       console.log(e);
     }).catch((e) => {
       console.warn(e.message);
       console.log(e.error);
     });
-  }, []);
+  }
 
-  return (
-    <pre
-      ref={preRef}
-      style={{
-        position: ' absolute',
-        margin: '0',
-        padding: '0',
-        left: '0',
-        top: '0',
-        height: '100%',
-        width: '100%',
-        fontSize: '1em',
-        lineHeight: '1.2',
-        fontFamily: "'Simple Console', monospace",
-      }}
-    />
-  );
+  render() {
+    return (
+      <pre
+        ref={(ref) => { this.preRef = ref; }}
+        style={{
+          position: 'absolute',
+          margin: '0',
+          padding: '0',
+          left: '0',
+          top: '0',
+          height: '100vh',
+          width: '100vw',
+          fontSize: '2vh',
+          lineHeight: '1.2',
+          fontFamily: "'Simple Console', monospace",
+        }}
+      />
+    );
+  }
 }
 
 export default AsciiFlower;

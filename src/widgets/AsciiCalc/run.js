@@ -143,6 +143,9 @@ export function run(program, runSettings, userData = {}) {
 		})
 		
 		const touchHandler = e => {
+			if (e === undefined || e.touches === undefined || e.touches.length == 0) {
+				return
+			}
 			const rect = settings.element.getBoundingClientRect()
 			pointer.x = e.touches[0].clientX - rect.left
 			pointer.y = e.touches[0].clientY - rect.top

@@ -1,23 +1,27 @@
 import React from 'react';
 
-import AsciiAnimation from '../widgets/AsciiAnimation';
+// eslint-disable-next-line import/no-unresolved, import/extensions
+import AsciiFlower from '@/widgets/AsciiCalc';
 import './page.css';
 
 export default function Home() {
   return (
     <div id="welcome-page">
-      {/* background right ascii art video */}
-      <AsciiAnimation />
-
       {/* left vertical center */}
-      <div>
-        <p>
-          Computer Science Student and Teaching Assistant.
+      <div id="welcome-text-div" style={{ zIndex: '1' }}>
+        <h1 id="welcome-name">
+          ADAM
           <br />
-          From Houston, TX.
-          <br />
-          Loves furniture and art.
-        </p>
+          ESCOBEDO
+        </h1>
+        <h2 id="welcome-text" style={{ marginTop: '15vh' }}>
+          &darr; Learning, Creating, and Sharing &darr;
+        </h2>
+      </div>
+
+      {/* background right ascii art video */}
+      <div style={{ zIndex: '2' }}>
+        <AsciiFlower />
       </div>
 
       {/* cool footer */}

@@ -1,22 +1,9 @@
 import React from 'react';
+import './MenuHeader.css';
 
 function MenuHeader() {
   return (
-    <div style={{
-      zIndex: '3',
-      top: '1%',
-      position: 'fixed',
-      width: '100%',
-      maxWidth: '100rem',
-      backgroundColor: 'transparent',
-      display: 'flex',
-      justifyContent: 'space-between',
-      paddingLeft: '1%',
-      paddingRight: '1%',
-      left: '50%',
-      transform: 'translate(-50%, 0%)',
-    }}
-    >
+    <div id="menu-header">
       <a href="/">HOME</a>
       <a href="/projects">PROJECTS</a>
       <a href="/experience">EXPERIENCE</a>

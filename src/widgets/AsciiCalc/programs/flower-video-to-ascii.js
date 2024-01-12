@@ -32,7 +32,7 @@ const bgMap = [
   '#af87af',
   '#afaf5f',
   '#afaf87',
-  '#afafaf',
+  '#b0c59f',
   '#afafd7',
   '#afafff',
   '#afd787',
@@ -126,7 +126,7 @@ const fgIndexMap = [
 ];
 
 export function main(coord, context) {
-  let frameIndex = Math.floor(context.frame * 0.15);
+  let frameIndex = Math.floor(context.frame * 0.2);
   // the closer the frameIndex is to 750, the slower the animation
   if (frameIndex > 520) { // the last frame is at framesJson[749]
     frameIndex = 520;

@@ -35,4 +35,10 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
-[Offscreen ASCII](https://offscreencanvas.com/issues/webgl-ascii/)
+References:
+
+- [Offscreen ASCII](https://offscreencanvas.com/issues/webgl-ascii/)
+
+Fonts Used:
+
+- [BN Harrold Bold](https://www.bnicks.com/shop/p/bn-harrold-bold)

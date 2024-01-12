@@ -29,11 +29,11 @@ class AsciiFlower extends React.Component {
           position: 'absolute',
           margin: '0',
           padding: '0',
-          left: '0',
+          left: '4vw',
           top: '0',
           height: '100vh',
           width: '100vw',
-          fontSize: '2vh',
+          fontSize: '1.02vw',
           lineHeight: '1.2',
           fontFamily: "'Simple Console', monospace",
         }}

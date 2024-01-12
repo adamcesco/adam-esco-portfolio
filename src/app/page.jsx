@@ -8,11 +8,16 @@ export default function Home() {
   return (
     <div id="welcome-page">
       {/* left vertical center */}
-      <h1 id="name-header" style={{ zIndex: '1' }}>
-        Adam
-        <br />
-        Escobedo
-      </h1>
+      <div id="welcome-text-div" style={{ zIndex: '1' }}>
+        <h1 id="welcome-name">
+          ADAM
+          <br />
+          ESCOBEDO
+        </h1>
+        <h2 id="welcome-text" style={{ marginTop: '15vh' }}>
+          &darr; Learning, Creating, and Sharing &darr;
+        </h2>
+      </div>
 
       {/* background right ascii art video */}
       <div style={{ zIndex: '2' }}>

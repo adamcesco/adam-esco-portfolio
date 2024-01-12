@@ -1,4 +1,5 @@
-import framesJson from '../frames-ascii-flower.json';
+// eslint-disable-next-line import/no-unresolved, import/no-absolute-path
+import framesJson from '/public/frames-ascii-flower.json';
 
 export const settings = { fps: 60 };
 
@@ -7,6 +8,7 @@ const charMap = [' ', '#', '(', ',', '@', 'S', 'g'];
 const bgMap = [
   '#00005f',
   '#005f00',
+  '#005f5f',
   '#5f5f00',
   '#5f5f87',
   '#5f8700',
@@ -14,12 +16,10 @@ const bgMap = [
   '#5f8787',
   '#875f00',
   '#875f5f',
-  '#875f87',
   '#878700',
   '#87875f',
   '#878787',
   '#8787af',
-  '#8787d7',
   '#87af5f',
   '#87af87',
   '#87afaf',
@@ -32,13 +32,14 @@ const bgMap = [
   '#af87af',
   '#afaf5f',
   '#afaf87',
-  '#afafaf',
+  '#b0c59f',
   '#afafd7',
   '#afafff',
   '#afd787',
   '#afd7af',
   '#afd7d7',
   '#afd7ff',
+  '#d78700',
   '#d7875f',
   '#d7af5f',
   '#d7af87',
@@ -50,10 +51,11 @@ const bgMap = [
   '#d7d7ff',
   '#d7ffd7',
   '#d7ffff',
+  '#ffd7af',
   '#ffd7d7',
   '#ffd7ff',
   '#ffffd7',
-  '#ffffff',
+  '#00000000',
   '#eeeeee',
 ];
 
@@ -68,6 +70,7 @@ const fgIndexMap = [
   '#5f5f00',
   '#5f5f5f',
   '#5f5f87',
+  '#5f5faf',
   '#5f8700',
   '#5f875f',
   '#5f8787',
@@ -115,8 +118,6 @@ const fgIndexMap = [
   '#d7ffaf',
   '#d7ffd7',
   '#d7ffff',
-  '#ffafaf',
-  '#ffd75f',
   '#ffd7af',
   '#ffd7d7',
   '#ffd7ff',
@@ -125,7 +126,11 @@ const fgIndexMap = [
 ];
 
 export function main(coord, context) {
-  const frameIndex = Math.floor(context.frame % 750);
+  let frameIndex = Math.floor(context.frame * 0.2);
+  // the closer the frameIndex is to 750, the slower the animation
+  if (frameIndex > 520) { // the last frame is at framesJson[749]
+    frameIndex = 520;
+  }
 
   // add bounds checking for coord
   if (coord.y >= framesJson[frameIndex].length) {

@@ -9,13 +9,14 @@ export default function Home() {
     <div id="welcome-page">
       {/* left vertical center */}
       <div id="welcome-text-div" style={{ zIndex: '1' }}>
-        <h1 id="welcome-name">
+        <h1 className="welcome-name" style={{ fontSize: '11rem' }}>
           ADAM
-          <br />
+        </h1>
+        <h1 className="welcome-name" style={{ fontSize: '6rem' }}>
           ESCOBEDO
         </h1>
-        <h2 id="welcome-text" style={{ marginTop: '15vh' }}>
-          &darr; Learning, Creating, and Sharing &darr;
+        <h2 id="welcome-text" style={{ marginTop: '8vh' }}>
+          &darr; Learn more below &darr;
         </h2>
       </div>
 

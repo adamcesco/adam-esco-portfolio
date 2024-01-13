@@ -1,7 +1,7 @@
 // eslint-disable-next-line import/no-unresolved, import/no-absolute-path
 import framesJson from '/public/frames-ascii-flower.json';
 
-export const settings = { fps: 60 };
+export const settings = { fps: 30 };
 
 const charMap = [' ', '#', '(', ',', '@', 'S', 'g'];
 
@@ -126,7 +126,7 @@ const fgIndexMap = [
 ];
 
 export function main(coord, context) {
-  let frameIndex = Math.floor(context.frame * 0.2);
+  let frameIndex = Math.floor(context.frame * 0.3);
   // the closer the frameIndex is to 750, the slower the animation
   if (frameIndex > 520) { // the last frame is at framesJson[749]
     frameIndex = 520;

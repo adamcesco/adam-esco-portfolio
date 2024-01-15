@@ -34,7 +34,7 @@ class AsciiFlower extends React.Component {
           height: '100vh',
           width: '100vw',
           fontSize: '1.02vw',
-          lineHeight: '1.2',
+          lineHeight: '1.15',
           fontFamily: "'Simple Console', monospace",
         }}
       />

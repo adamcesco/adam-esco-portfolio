@@ -15,9 +15,6 @@ export default function Home() {
         <h1 className="welcome-name" style={{ fontSize: '6rem' }}>
           ESCOBEDO
         </h1>
-        <h2 id="welcome-text" style={{ marginTop: '8vh' }}>
-          &darr; Learn more below &darr;
-        </h2>
       </div>
 
       {/* background right ascii art video */}

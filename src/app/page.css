@@ -29,6 +29,7 @@
 }
 
 #welcome-text {
+    margin-top: 8vh;
     font-size: 2rem;
     color: #525252;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

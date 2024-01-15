@@ -3,11 +3,19 @@ import './MenuHeader.css';
 
 function MenuHeader() {
   return (
-    <div id="menu-header">
-      <a href="/">HOME</a>
-      <a href="/projects">PROJECTS</a>
-      <a href="/experience">EXPERIENCE</a>
-      <a href=" ">CONTACT ME</a>
+    <div id="button-container">
+      <p className="header-button" style={{ backgroundColor: 'black', color: 'white' }}>
+        MENU
+      </p>
+      <p
+        className="header-button"
+        style={{
+          backgroundColor: 'transparent',
+          color: 'black',
+        }}
+      >
+        EMAIL
+      </p>
     </div>
   );
 }

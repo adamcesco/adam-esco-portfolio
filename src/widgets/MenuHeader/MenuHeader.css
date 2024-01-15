@@ -1,22 +1,15 @@
-@font-face {
-    font-family: BNHarroldBold;
-    font-weight: bold;
-    src: url('../../../public/fonts/BNHarroldBold.otf') format('opentype');
+#button-container {
+    position: fixed;
+    z-index: 3;
+    top: 4%;
+    left: 4%;
 }
 
-#menu-header {
+.header-button {
+    display: inline-block;
     z-index: 3;
-    top: 1%;
-    position: fixed;
-    width: 100%;
-    max-width: 100rem;
-    background-color: transparent;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 1%;
-    padding-right: 1%;
-    left: 50%;
-    transform: translate(-50%, 0%);
-    font-family: BNHarroldBold;
-    color: #525252bd;
-  }
+    padding: .5rem .9rem .5rem .9em;
+    border-radius: 2rem;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

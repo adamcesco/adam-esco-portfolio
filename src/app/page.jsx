@@ -7,17 +7,15 @@ import './page.css';
 export default function Home() {
   return (
     <div id="welcome-page">
-      {/* left vertical center */}
       <div id="welcome-text-div" style={{ zIndex: '1' }}>
-        <h1 className="welcome-name" style={{ fontSize: '11rem' }}>
+        <h1 className="welcome-name" style={{ fontSize: '11.05rem', marginLeft: '-.04%' }}>
           ADAM
         </h1>
-        <h1 className="welcome-name" style={{ fontSize: '6rem' }}>
+        <h1 className="welcome-name" style={{ fontSize: '6rem', marginLeft: '-.4%' }}>
           ESCOBEDO
         </h1>
       </div>
 
-      {/* background right ascii art video */}
       <div style={{ zIndex: '2' }}>
         <AsciiFlower />
       </div>

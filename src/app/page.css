@@ -15,17 +15,18 @@
 }
 
 #welcome-text-div {
+    position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-left: 3rem;
+    left: 4%;
 }
 
 .welcome-name {
+    width: 100vw;
     font-weight: 700;
     color: #5e855f;
     font-family: BNHarroldBold;
+    line-height: .9;
 }
 
 #welcome-text {

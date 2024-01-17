@@ -1,25 +1,24 @@
+/* eslint-disable import/extensions */
+/* eslint-disable import/no-unresolved */
 import React from 'react';
 
-// eslint-disable-next-line import/no-unresolved, import/extensions
 import AsciiFlower from '@/widgets/AsciiCalc';
+import PageWindow from '@/widgets/PageWindow';
 import './page.css';
 
 export default function Home() {
   return (
     <>
-      <button type="button" id="contact-button">CONTACT</button>
+      <AsciiFlower />
+      <button type="button" id="contact-button">EMAIL</button>
       <div id="welcome-page">
         <div id="welcome-text-div" style={{ zIndex: '1' }}>
           <h1 className="welcome-name" style={{ fontSize: '11.05rem', marginLeft: '-.04%' }}>
             ADAM
           </h1>
-          <h1 className="welcome-name" style={{ fontSize: '6rem', marginLeft: '-.4%' }}>
+          <h1 className="welcome-name" style={{ fontSize: '6rem', marginLeft: '-.94%' }}>
             ESCOBEDO
           </h1>
-        </div>
-
-        <div style={{ zIndex: '2' }}>
-          <AsciiFlower />
         </div>
 
         {/* cool footer */}
@@ -27,11 +26,41 @@ export default function Home() {
         {/*   "completed" projects menu/display */}
         {/*   "in progress" projects menu/display */}
       </div>
-      <div style={{
-        height: '100%',
-        width: '100%',
-      }}
+      <div
+        style={{
+          position: 'relative',
+          width: '100vw',
+          height: '3.3rem',
+          backgroundColor: '#3d3d3d',
+          top: '-.5rem',
+        }}
       />
+      <div id="page-2">
+        <PageWindow
+          src=""
+          size="small"
+          tags={['', '', '']}
+          description=""
+          color=""
+          hoverText=""
+        />
+        <PageWindow
+          src=""
+          size="medium"
+          tags={['', '', '']}
+          description=""
+          color=""
+          hoverText=""
+        />
+        <PageWindow
+          src=""
+          size="large"
+          tags={['', '', '']}
+          description=""
+          color=""
+          hoverText=""
+        />
+      </div>
     </>
   );
 }

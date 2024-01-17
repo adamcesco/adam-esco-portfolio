@@ -19,7 +19,7 @@ function MenuHeader() {
         color: 'black',
         borderStyle: 'solid',
         borderWidth: '.05rem',
-        backgroundColor: '#fafbf0',
+        backgroundColor: '#fbf9f0',
       }}
     >
       MENU

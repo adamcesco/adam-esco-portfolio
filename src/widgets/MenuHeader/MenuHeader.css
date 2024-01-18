@@ -1,0 +1,23 @@
+@font-face {
+    font-family: HelveticaNeue-Regular;
+    font-weight: bold;
+    src: url('../../../public/fonts/HelveticaNeue-Regular.otf') format('opentype');
+}
+
+#menu-button {
+    font-size: medium;
+    background: none;
+    cursor: pointer;
+    position: fixed;
+    z-index: 4;
+    top: 4%;
+    left: 4%;
+    padding: .5rem .9rem .5rem .9em;
+    border-radius: 2rem;
+    font-weight: 400;
+    font-family: HelveticaNeue-Regular;
+    color: black;
+    border-style: solid;
+    border-width: .05rem;
+    background-color: #fbf9f0;
+}

@@ -16,6 +16,12 @@
     src: url('../../public/fonts/HelveticaNeue-Regular.otf') format('opentype');
 }
 
+@font-face {
+    font-family: Lego-Brix;
+    font-weight: normal;
+    src: url('../../public/fonts/lego-brix.ttf')
+}
+
 #contact-button {
     border: none;
     background: none;
@@ -32,51 +38,34 @@
     font-family: HelveticaNeue-Regular;
 }
 
-#welcome-page {
-    height: 100vh;
-    width: 100%;
-    background-color: #fbf9f0;
-}
-
 #second-page {
     position: absolute;
-    top: 104vh;
     height: 100vh;
     width: 100%;
     background-color: #fbf9f0;
 }
 
-#welcome-text-div {
-    position: absolute;
-    top: 50%;
-    left: 3vw;
-    transform: translate(0, -50%);
-    display: flex;
-    flex-direction: column;
-}
-
-.welcome-name {
-    font-weight: 700;
-    color: #5e855f;
-    font-family: BNHarroldBold;
-    line-height: .9;
-}
-
-#welcome-description {
-    padding-top: .8rem;
-    font-family: HelveticaNeue-Regular;
-    font-size: .747rem;
-    text-transform: uppercase;
-}
-
-#title-container {
+#name-title-container {
     position: absolute;
     top: 15%;
     left: 3vw;
     width: 37vw;
     display: flex;
+    flex-direction: column;
+}
+
+#title-container {
+    position: relative;
+    top: 10%;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+}
+
+#second-page-name {
+    font-family: Lego-Brix;
+    font-size: 4rem;
+    color: rgb(89, 89, 89);
 }
 
 .title {

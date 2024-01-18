@@ -24,18 +24,13 @@ export default function Home() {
             Click around and learn about me.
           </h2>
         </div>
-
-        {/* cool footer */}
-        {/* scroll down to see: */}
-        {/*   "completed" projects menu/display */}
-        {/*   "in progress" projects menu/display */}
       </div>
       <div
         style={{
           position: 'relative',
           width: '100vw',
           height: '5vh',
-          backgroundColor: '#3d3d3d',
+          backgroundColor: 'color: rgb(89, 89, 89);',
           top: '-1vh',
         }}
       />
@@ -91,7 +86,7 @@ export default function Home() {
               02
             </p>
           </div>
-          <div id="footer">
+          <div className="footer">
             <p>
               FROM HOUSTON, TEXAS --- CURRENTLY IN DALLAS, TEXAS
             </p>

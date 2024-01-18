@@ -86,7 +86,7 @@ export default function Home() {
               02
             </p>
           </div>
-          <div className="footer">
+          <div id="footer">
             <p>
               FROM HOUSTON, TEXAS --- CURRENTLY IN DALLAS, TEXAS
             </p>

@@ -23,14 +23,13 @@
     position: absolute;
     z-index: 3;
     top: 4%;
-    left: 4%;
+    left: 3vw;
     font-size: medium;
     margin-left: 5.6rem;
     padding: .5rem .9rem .5rem .9rem;
     border-radius: 2rem;
-    font-weight: 400;
+    color: rgb(89, 89, 89);
     font-family: HelveticaNeue-Regular;
-    color: black;
 }
 
 #welcome-page {
@@ -50,7 +49,7 @@
 #welcome-text-div {
     position: absolute;
     top: 50%;
-    left: 4%;
+    left: 3vw;
     transform: translate(0, -50%);
     display: flex;
     flex-direction: column;
@@ -63,9 +62,16 @@
     line-height: .9;
 }
 
+#welcome-description {
+    padding-top: .8rem;
+    font-family: HelveticaNeue-Regular;
+    font-size: .747rem;
+    text-transform: uppercase;
+}
+
 #title-container {
     position: absolute;
-    top: 25%;
+    top: 15%;
     left: 3vw;
     width: 37vw;
     display: flex;

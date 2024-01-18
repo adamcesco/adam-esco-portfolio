@@ -18,6 +18,11 @@ export default function Home() {
           <h1 className="welcome-name" style={{ fontSize: '6rem', marginLeft: '-.94%' }}>
             ESCOBEDO
           </h1>
+          <h2 id="welcome-description">
+            Loves software engineering, art, and furniture design.
+            <br />
+            Click around and learn about me.
+          </h2>
         </div>
 
         {/* cool footer */}

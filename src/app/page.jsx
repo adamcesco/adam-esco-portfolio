@@ -30,7 +30,7 @@ export default function Home() {
           position: 'relative',
           width: '100vw',
           height: '5vh',
-          backgroundColor: 'rgb(89, 89, 89);',
+          backgroundColor: 'rgb(89, 89, 89)',
           top: '-1vh',
         }}
       />

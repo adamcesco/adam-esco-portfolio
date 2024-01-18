@@ -29,7 +29,7 @@ export default function Home() {
         style={{
           position: 'relative',
           width: '100vw',
-          height: '3.3rem',
+          height: '5vh',
           backgroundColor: '#3d3d3d',
           top: '-1vh',
         }}

@@ -26,6 +26,7 @@ class AsciiFlower extends React.Component {
       <pre
         ref={(ref) => { this.preRef = ref; }}
         style={{
+          zIndex: '2',
           position: 'absolute',
           margin: '0',
           padding: '0',
@@ -34,7 +35,7 @@ class AsciiFlower extends React.Component {
           height: '100vh',
           width: '100vw',
           fontSize: '1.02vw',
-          lineHeight: '1.2',
+          lineHeight: '1.17',
           fontFamily: "'Simple Console', monospace",
         }}
       />

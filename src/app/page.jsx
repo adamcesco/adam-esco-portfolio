@@ -7,7 +7,9 @@ import './page.css';
 export default function Home() {
   return (
     <>
-      <AsciiFlower />
+      <div id="ascii-flower-container">
+        <AsciiFlower />
+      </div>
       <div id="welcome-page">
         <div id="welcome-text-div" style={{ zIndex: '1' }}>
           <h1 className="welcome-name" style={{ position: 'relative', fontSize: '9.208rem', left: '-.04%' }}>

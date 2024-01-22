@@ -17,7 +17,7 @@ export default function Home() {
             ESCOBEDO
           </h1>
           <p> I&apos;m a software engineer. </p>
-          <p> Look around and Learn about me! </p>
+          <p> Look around and learn about me! </p>
         </div>
       </div>
     </>

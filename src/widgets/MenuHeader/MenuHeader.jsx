@@ -6,7 +6,7 @@ function MenuHeader() {
     <div id="menu-header">
       <a href="/">HOME</a>
       <a href="/projects">PROJECTS</a>
-      <a href="/experience">EXPERIENCE</a>
+      <a href="/experience">TUTORIALS</a>
       <a href=" ">CONTACT ME</a>
     </div>
   );

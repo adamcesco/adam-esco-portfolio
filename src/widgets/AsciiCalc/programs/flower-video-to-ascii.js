@@ -143,7 +143,7 @@ export function main(coord, context, cursor) {
     return ' ';
   }
 
-  const res = framesJson[frameIndex][coord.y][coord.x];
+  const res = framesJson[frameIndex][coord.y][Math.max(coord.x - 15, 0)];
   // turn res into a binary string
   const binary = res.charCodeAt(0).toString(2).padStart(8, '0') + res.charCodeAt(1).toString(2).padStart(8, '0');
   const bgIndex = parseInt(binary.slice(1, 7), 2);
@@ -154,7 +154,7 @@ export function main(coord, context, cursor) {
   const fg = fgIndexMap[fgIndex];
   const ch = charMap[charIndex];
 
-  if (bg === '#00000000' && ch === ' ') {
+  if ((bg === '#00000000' && ch === ' ') || coord.x < 15) {
     const m = Math.min(context.cols * context.metrics.aspect, context.rows);
     const st = {
       x: 2.0 * ((coord.x - context.cols / 2) / m) * context.metrics.aspect, // apply aspect
@@ -166,8 +166,8 @@ export function main(coord, context, cursor) {
     };
     const distFromCursor = length(sub(st, pointer));
 
-    const bgChar = (distFromCursor < 1.5) ? '.' : ' ';
-    const fgColor = (distFromCursor < 1.5) ? '#0f6a44' : '#ffffff';
+    const bgChar = (distFromCursor < 1.5 && coord.x % 2 === 0) ? '.' : ' ';
+    const fgColor = (distFromCursor < 1.5) ? '#000000' : '#ffffff';
 
     return {
       char: bgChar,

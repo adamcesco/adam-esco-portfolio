@@ -1,3 +1,6 @@
+// eslint-disable-next-line import/extensions
+import { length, sub } from '../core/vec2.js';
+
 // eslint-disable-next-line import/no-unresolved, import/no-absolute-path
 import framesJson from '/public/frames-ascii-flower.json';
 
@@ -125,7 +128,7 @@ const fgIndexMap = [
   '#ffffff',
 ];
 
-export function main(coord, context) {
+export function main(coord, context, cursor) {
   let frameIndex = Math.floor(context.frame * 0.3);
   // the closer the frameIndex is to 750, the slower the animation
   if (frameIndex > 520) { // the last frame is at framesJson[749]
@@ -150,6 +153,28 @@ export function main(coord, context) {
   const bg = bgMap[bgIndex];
   const fg = fgIndexMap[fgIndex];
   const ch = charMap[charIndex];
+
+  if (bg === '#00000000' && ch === ' ') {
+    const m = Math.min(context.cols * context.metrics.aspect, context.rows);
+    const st = {
+      x: 2.0 * ((coord.x - context.cols / 2) / m) * context.metrics.aspect, // apply aspect
+      y: 2.0 * ((coord.y - context.rows / 2) / m),
+    };
+    const pointer = {
+      x: 2.0 * ((cursor.x - context.cols / 2) / m) * context.metrics.aspect,
+      y: 2.0 * ((cursor.y - context.rows / 2) / m),
+    };
+    const distFromCursor = length(sub(st, pointer));
+
+    const bgChar = (distFromCursor < 1.5) ? '.' : ' ';
+    const fgColor = (distFromCursor < 1.5) ? '#0f6a44' : '#ffffff';
+
+    return {
+      char: bgChar,
+      color: fgColor,
+      backgroundColor: '#00000000',
+    };
+  }
 
   return {
     char: ch,

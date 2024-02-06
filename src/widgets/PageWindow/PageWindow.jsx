@@ -1,7 +1,15 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Image from 'next/image';
 
-export default function PageWindow({src, size, tags, description, color, hoverText}) {
+export default function PageWindow({
+  src,
+  size,
+  tags,
+  description,
+  color,
+  hoverText
+}) {
   let width = '0';
   let height = '0';
 
@@ -50,4 +58,11 @@ export default function PageWindow({src, size, tags, description, color, hoverTe
     </>
   )
 }
-
+PageWindow.propTypes = {
+  src: PropTypes.string.isRequired,
+  size: PropTypes.string.isRequired,
+  tags: PropTypes.arrayOf(PropTypes.string).isRequired,
+  description: PropTypes.string.isRequired,
+  color: PropTypes.string.isRequired,
+  hoverText: PropTypes.string.isRequired,
+};

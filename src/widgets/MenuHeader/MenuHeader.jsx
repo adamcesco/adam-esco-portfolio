@@ -1,15 +1,28 @@
+'use client';
+
 import React from 'react';
 import './MenuHeader.css';
 
-function MenuHeader() {
-  return (
-    <div id="menu-header">
-      <a href="/">HOME</a>
-      <a href="/projects">PROJECTS</a>
-      <a href="/experience">TUTORIALS</a>
-      <a href=" ">CONTACT ME</a>
-    </div>
-  );
+class MenuHeader extends React.Component {
+  // add functionality for an animation that displays what menu item was recently clicked
+  constructor(props) {
+    super(props);
+    this.state = {
+      // eslint-disable-next-line react/no-unused-state
+      avtive: false,
+    };
+  }
+
+  render() {
+    return (
+      <div id="menu-header">
+        <a href="#about">About</a>
+        <a href="#projects">Project</a>
+        <a href="#tutorials">Tutorials</a>
+        <a href="#contact">Contact</a>
+      </div>
+    );
+  }
 }
 
 export default MenuHeader;

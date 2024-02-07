@@ -5,7 +5,6 @@ import React from 'react';
 import { run } from './run.js';
 import * as program from './programs/flower-video-to-ascii.js';
 
-// eslint-disable-next-line react/prop-types
 class AsciiFlower extends React.Component {
   constructor(props) {
     super(props);

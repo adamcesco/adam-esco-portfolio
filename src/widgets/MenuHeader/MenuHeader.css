@@ -1,22 +1,29 @@
 @font-face {
-    font-family: BNHarroldBold;
-    font-weight: bold;
-    src: url('../../../public/fonts/BNHarroldBold.otf') format('opentype');
+    font-family: HelveticaNeue-Medium;
+    font-weight: normal;
+    src: url('/fonts/HelveticaNeue-Medium.otf') format('opentype');
 }
 
 #menu-header {
     z-index: 3;
-    top: 1%;
+    
     position: fixed;
-    width: 100%;
-    max-width: 100rem;
-    background-color: transparent;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 1%;
-    padding-right: 1%;
+    top: 2%;
     left: 50%;
     transform: translate(-50%, 0%);
-    font-family: BNHarroldBold;
-    color: #575757;
-  }
+    
+    display: flex;
+    justify-content: space-between;
+    
+    padding: .8rem;
+    border-radius: 2rem;
+    background-color: #394c568f;
+    backdrop-filter: blur(10px);
+}
+
+#menu-header > a {
+    font-family: HelveticaNeue-Medium;
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin: 0 1.5rem;
+}

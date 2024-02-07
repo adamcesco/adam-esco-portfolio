@@ -1,13 +1,7 @@
 @font-face {
-    font-family: BNHarroldBold;
-    font-weight: bold;
-    src: url('../../public/fonts/BNHarroldBold.otf') format('opentype');
-}
-
-@font-face {
-    font-family: NueueHelvetica;
+    font-family: NueueHelvetica-Regular;
     font-weight: normal;
-    src: url('../../public/fonts/HelveticaNeue-Regular.otf') format('opentype');
+    src: url('/fonts/HelveticaNeue-Regular.otf') format('opentype');
 }
 
 #ascii-flower-container {
@@ -41,13 +35,13 @@
 
 .welcome-name {
     color: #5d5b5f;
-    font-family: NueueHelvetica;
+    font-family: NueueHelvetica-Regular;
     margin-top: .3rem;
     font-size: 4rem;
 }
 
 #welcome-text-div > .description {
-    font-family: NueueHelvetica;
+    font-family: NueueHelvetica-Regular;
     color: #5d5b5f;
     font-size: 1.3rem;
     margin-top: 2rem;

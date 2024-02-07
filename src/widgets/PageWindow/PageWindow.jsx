@@ -56,7 +56,7 @@ export default function PageWindow({
         <div></div>
       </div>
     </>
-  )
+  );
 }
 PageWindow.propTypes = {
   src: PropTypes.string.isRequired,

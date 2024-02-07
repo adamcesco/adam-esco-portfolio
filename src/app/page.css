@@ -5,9 +5,9 @@
 }
 
 @font-face {
-    font-family: PPEditorialNew-Italic;
+    font-family: NueueHelvetica;
     font-weight: normal;
-    src: url('../../public/fonts/PPEditorialNew-Italic.otf') format('opentype');
+    src: url('../../public/fonts/HelveticaNeue-Regular.otf') format('opentype');
 }
 
 #ascii-flower-container {
@@ -30,8 +30,6 @@
 #welcome-text-div {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     background-color: #f5f7f8;
     border-radius: 1.2rem;
     padding: 1.5rem;
@@ -41,16 +39,16 @@
     border-width: .2rem;
 }
 
-#welcome-text-div > p {
-    font-family: PPEditorialNew-Italic;
+.welcome-name {
     color: #5d5b5f;
-    font-size: 1.3rem;
+    font-family: NueueHelvetica;
+    margin-top: .3rem;
+    font-size: 4rem;
 }
 
-.welcome-name {
-    font-weight: 700;
+#welcome-text-div > .description {
+    font-family: NueueHelvetica;
     color: #5d5b5f;
-    font-family: BNHarroldBold;
-    margin-top: .3rem;
-    line-height: .8;
+    font-size: 1.3rem;
+    margin-top: 2rem;
 }

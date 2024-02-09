@@ -29,12 +29,12 @@
     padding: 1.5rem;
     margin-left: 3%;
     border-style: solid;
-    border-color: #5d5b5f;
+    border-color: #4b494d;
     border-width: .2rem;
 }
 
 .welcome-name {
-    color: #5d5b5f;
+    color: #4b494d;
     font-family: NueueHelvetica-Regular;
     margin-top: .3rem;
     font-size: 4rem;
@@ -42,7 +42,7 @@
 
 #welcome-text-div > .description {
     font-family: NueueHelvetica-Regular;
-    color: #5d5b5f;
+    color: #4b494d;
     font-size: 1.3rem;
     margin-top: 2rem;
 }

@@ -10,7 +10,7 @@ export default function Home() {
       <div id="ascii-flower-container">
         <AsciiFlower />
       </div>
-      <div id="welcome-page">
+      <div id="welcome-section">
         <div id="welcome-text-div" style={{ zIndex: '1' }}>
           <h1 className="welcome-name">
             Hello. I&apos;m Adam.
@@ -23,9 +23,20 @@ export default function Home() {
           <p className="description">
             I&apos;m passionate about creating tools that
             <br />
-            perfectly meet the needs of the user.
+            perfectly meet the needs of an audience.
           </p>
         </div>
+      </div>
+      <div id="about-section">
+        <h1 className="section-header">About Me</h1>
+        <p className="description">
+          I&apos;m a software engineer with a passion for creating tools that
+          perfectly meet the needs of an audience. I&apos;m currently a student
+          at the Southern Methodist University, studying Computer Science and
+          Engineering. I&apos;m also a teaching assistant for the Computer
+          Science department, where I help students understand the material and
+          solve problems.
+        </p>
       </div>
     </>
   );

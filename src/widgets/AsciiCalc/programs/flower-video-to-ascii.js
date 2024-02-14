@@ -4,7 +4,7 @@ import { length, sub } from '../core/vec2.js';
 // eslint-disable-next-line import/no-unresolved, import/no-absolute-path
 import framesJson from '/public/frames-ascii-flower.json';
 
-export const settings = { fps: 30, allowSelect: true };
+export const settings = { fps: 30, allowSelect: false };
 
 const charMap = [' ', '#', '(', ',', '@', 'S', 'g'];
 

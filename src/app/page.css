@@ -1,3 +1,17 @@
+/* 
+
+container route {
+    size
+    position tyoe
+    z-index
+    position logic
+    display logic
+    visual style
+    font style
+}
+
+*/
+
 @font-face {
     font-family: NueueHelvetica-Regular;
     font-weight: normal;
@@ -5,29 +19,38 @@
 }
 
 #ascii-flower-container {
-    position: absolute;
-    z-index: 1;
     height: 100vh;
     width: 100%;
+
+    position: fixed;
+    z-index: 0;
 }
 
 #welcome-section {
     height: 100vh;
     width: 100%;
+    
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: #f5f7f8;
     justify-content: space-between;
+    
+    background-color: #f5f7f8;
 }
 
 #welcome-text-div {
+    position: relative;
+
+    z-index: 1;
+
+    left: 3%;
+    
     display: flex;
     flex-direction: column;
-    background-color: #f5f7f8;
-    border-radius: 1.2rem;
+
+    background-color: #f5f7f8;    
     padding: 1.5rem;
-    margin-left: 3%;
+    border-radius: 1.2rem;
     border-style: solid;
     border-color: #4b494d;
     border-width: .2rem;
@@ -35,14 +58,35 @@
 
 .welcome-name {
     color: #4b494d;
-    font-family: NueueHelvetica-Regular;
     margin-top: .3rem;
+    
+    font-family: NueueHelvetica-Regular;
     font-size: 4rem;
 }
 
 #welcome-text-div > .description {
-    font-family: NueueHelvetica-Regular;
     color: #4b494d;
-    font-size: 1.3rem;
     margin-top: 2rem;
+    
+    font-family: NueueHelvetica-Regular;
+    font-size: 1.3rem;
+}
+
+/* ---------------- about section ---------------- */
+#continued-section {
+    height: 100vh;
+    width: 100%;
+
+    background-color: #f5f7f8;
+}
+
+#about-text-container {
+    position: relative;
+ 
+    z-index: 1;
+ 
+    display: flex;
+    flex-direction: column;
+ 
+    background-color: #f5f7f8;
 }

@@ -11,7 +11,7 @@ export default function Home() {
         <AsciiFlower />
       </div>
       <div id="welcome-section">
-        <div id="welcome-text-div" style={{ zIndex: '1' }}>
+        <div id="welcome-text-div">
           <h1 className="welcome-name">
             Hello. I&apos;m Adam.
           </h1>
@@ -27,16 +27,28 @@ export default function Home() {
           </p>
         </div>
       </div>
-      <div id="about-section">
-        <h1 className="section-header">About Me</h1>
-        <p className="description">
-          I&apos;m a software engineer with a passion for creating tools that
-          perfectly meet the needs of an audience. I&apos;m currently a student
-          at the Southern Methodist University, studying Computer Science and
-          Engineering. I&apos;m also a teaching assistant for the Computer
-          Science department, where I help students understand the material and
-          solve problems.
-        </p>
+      <div id="continued-section">
+        <div id="about-text-container">
+          {/* will contain an about me paragraph */}
+          <h2 className="section-header">About Me</h2>
+          <p>
+            I&apos;m a software engineer with a passion for creating tools that
+            perfectly meet the needs of an audience. I&apos;m currently a student
+            at the Southern Methodist University, studying Computer Science and
+            Engineering. I&apos;m also a teaching assistant for the Computer
+            Science department, where I help students understand the material and
+            solve problems.
+          </p>
+        </div>
+        <div id="experience-timeline-container">
+          {/* will be similar to the skill timeline found here: https://www.seanhalpin.xyz/about */}
+        </div>
+        <div id="projects-container">
+          {/* will contain all relevant projects */}
+        </div>
+        <div id="tutorials-container">
+          {/* will contain all the tutorials you have written for your Data Structures class */}
+        </div>
       </div>
     </>
   );

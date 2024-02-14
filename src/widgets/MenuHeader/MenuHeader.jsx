@@ -17,7 +17,7 @@ class MenuHeader extends React.Component {
     return (
       <div id="menu-header">
         <a href="#about">About</a>
-        <a href="#projects">Project</a>
+        <a href="#projects">Projects</a>
         <a href="#tutorials">Tutorials</a>
         <a href="#contact">Contact</a>
       </div>

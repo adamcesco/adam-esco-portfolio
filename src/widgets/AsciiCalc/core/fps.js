@@ -1,3 +1,4 @@
+/* eslint-disable */
 /**
 @module   fps
 @desc     Frames-per-second-counter class.

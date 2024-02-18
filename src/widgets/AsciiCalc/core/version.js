@@ -1,3 +1,4 @@
+/* eslint-disable */
 /**
 @module   version.js
 @desc     Runner version string

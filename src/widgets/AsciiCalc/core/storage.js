@@ -1,3 +1,4 @@
+/* eslint-disable */
 /**
 Save and restore a JSON object to and from local storage.
 */

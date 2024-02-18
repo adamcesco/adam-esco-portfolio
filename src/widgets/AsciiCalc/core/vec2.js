@@ -1,3 +1,4 @@
+/* eslint-disable */
 /**
 @module   vec2.js
 @desc     2D vector helper functions

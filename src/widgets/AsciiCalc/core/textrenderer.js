@@ -1,3 +1,4 @@
+/* eslint-disable */
 /**
 @module   textrenderer.js
 @desc     renders to a text element

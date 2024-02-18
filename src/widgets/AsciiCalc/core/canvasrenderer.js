@@ -1,3 +1,4 @@
+/* eslint-disable */
 /**
 @module   canvasrenderer.js
 @desc     renders to canvas

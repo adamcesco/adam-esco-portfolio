@@ -22,18 +22,22 @@ class CardLink extends React.Component {
   };
 
   render() {
-    const { title, description } = this.props;
+    const { color, title, description } = this.props;
     const { isHovered } = this.state;
 
     return (
-      <div
+      <a
+        href="https://drive.google.com/drive/folders/1xlKx3yQdYwoF2tRonQZlzRgM7MK2XltA?usp=sharing"
+        target="_blank"
+        rel="noopener noreferrer"
         id="card-link"
         onMouseEnter={this.handleHover}
         onMouseLeave={this.handleHoverExit}
         style={{
+          backgroundColor: color,
           position: 'relative',
           transform: isHovered ? 'translateY(-5px)' : 'none',
-          boxShadow: isHovered ? 'rgba(0, 0, 0, 0.25) 0px 25px 50px -12px' : 'none',
+          boxShadow: isHovered ? 'rgba(100, 100, 111, 0.2) 0px 7px 29px 0px' : 'none',
           transition: 'all 0.4s ease',
         }}
       >
@@ -47,12 +51,13 @@ class CardLink extends React.Component {
             transition: 'transform 0.4s ease',
           }}
         />
-      </div>
+      </a>
     );
   }
 }
 
 CardLink.propTypes = {
+  color: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
 };

@@ -54,7 +54,13 @@ export default function Home() {
             I&apos;ve written a few tutorials for my Data Structures class. You can
             find them below:
           </p>
+          <ul>
+            <li>Test1</li>
+            <li>Test2</li>
+            <li>Test3</li>
+          </ul>
           <CardLink
+            color="#bde0f9"
             title="Tutorials Folder"
             description="Google Drive folder"
           />

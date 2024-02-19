@@ -23,6 +23,7 @@ class CardLink extends React.Component {
 
   render() {
     const {
+      href,
       color,
       title,
       description,
@@ -32,7 +33,7 @@ class CardLink extends React.Component {
 
     return (
       <a
-        href="https://drive.google.com/drive/folders/1xlKx3yQdYwoF2tRonQZlzRgM7MK2XltA?usp=sharing"
+        href={href}
         target="_blank"
         rel="noopener noreferrer"
         id="card-link"
@@ -62,6 +63,7 @@ class CardLink extends React.Component {
 }
 
 CardLink.propTypes = {
+  href: PropTypes.string.isRequired,
   color: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,

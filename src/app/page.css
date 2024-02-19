@@ -86,16 +86,20 @@ container route {
     padding-right: 7vw;
 }
 
-#continued-section p, #continued-section li {
+#about-text-container p, #tutorials-container p, #tutorials-container li {
     font-family: NueueHelvetica-Regular;
     color: #4b494d;
     font-size: 1.3rem;
 }
 
-#continued-section h2 {
+/* ---------------- continued section ---------------- */
+
+.section-header {
     font-family: NueueHelvetica-Regular;
     color: #4b494d;
     font-size: 2.2rem;
+    margin-top: 7rem;
+    margin-bottom: 2rem;
 }
 
 /* ---------------- about section ---------------- */
@@ -107,17 +111,33 @@ container route {
     background-color: #f5f7f8;
 }
 
+/* ---------------- projects section ---------------- */
+#projects-container-flex {
+    display: flex;
+    flex-direction: row;
+}
+
+#project-links-container {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    margin-left: 5vw;
+}
+
 /* ---------------- tutorials section ---------------- */
 
 #tutorials-container {
+    width: 100%;
+    
     display: flex;
     justify-content: space-between;
-
-    width: 100%;
 }
 
 #tutorials-text-container {
-    margin-right: 3vw;
+    margin-right: 5vw;
 }
 
 #tutorials-container ul {
@@ -126,9 +146,4 @@ container route {
 
 #tutorials-container ul > li {
     margin-top: 2vh;
-}
-
-.section-header {
-    margin-top: 7rem;
-    margin-bottom: 2rem;
 }

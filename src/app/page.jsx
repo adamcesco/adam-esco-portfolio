@@ -4,6 +4,7 @@ import React from 'react';
 
 import AsciiFlower from '@/widgets/AsciiCalc';
 import CardLink from '@/widgets/CardLink';
+import CardProject from '@/widgets/CardProject';
 import './page.css';
 
 export default function Home() {
@@ -50,18 +51,39 @@ export default function Home() {
           </p>
         </div>
         <div id="experience-timeline-container">
-          <h2 id="experience" className="section-header">Experience</h2>
           {/* will be similar to the skill timeline found here: https://www.seanhalpin.xyz/about */}
         </div>
         <div id="projects-container">
           <h2 id="projects" className="section-header">Projects</h2>
-          {/* will contain all relevant projects */}
-          <CardLink
-            color="#b0cfbc"
-            title="Profile"
-            description="GitHub"
-            src="/images/github-art.png"
-          />
+          <div id="projects-container-flex">
+            <CardLink
+              href="https://github.com/adamcesco"
+              color="#b0cfbc"
+              title="Profile"
+              description="GitHub"
+              src="/images/github-art.png"
+            />
+            <div id="project-links-container">
+              <CardProject
+                href="https://github.com/instaloader/instaloader"
+                title="Instaloader"
+                description="Open-source Instagram API, streamlining API for direct post metadata access."
+                languages="Python"
+              />
+              <CardProject
+                href="https://github.com/adamcesco/monaco-qol-notes"
+                title="ByteNotes"
+                description="Notetaking app with AI-driven text analysis, suggesting research articles based on content."
+                languages="Vue.js, JavaScript, React, Python, Rust"
+              />
+              <CardProject
+                href="https://github.com/adamcesco/search-engine"
+                title="Divide and Index"
+                description="Hackathon-winning web-article indexer with multithreaded design for speed and efficiency."
+                languages="C++, Bash"
+              />
+            </div>
+          </div>
         </div>
 
         <h2 id="tutorials" className="section-header">Tutorials</h2>
@@ -82,6 +104,7 @@ export default function Home() {
             </ul>
           </div>
           <CardLink
+            href="https://drive.google.com/drive/folders/1xlKx3yQdYwoF2tRonQZlzRgM7MK2XltA?usp=sharing"
             color="#bde0f9"
             title="Tutorials Folder"
             description="Google Drive"

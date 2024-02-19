@@ -28,14 +28,10 @@ class AsciiFlower extends React.Component {
         style={{
           zIndex: 'inherit',
           position: 'relative',
-          margin: '0',
-          padding: '0',
-          left: '0',
-          top: '0',
           height: '100%',
           width: '100%',
-          fontSize: '1.02',
-          lineHeight: '1.17',
+          fontSize: '1.02rem',
+          lineHeight: '1.17rem',
           fontFamily: "'Simple Console', monospace",
         }}
       />

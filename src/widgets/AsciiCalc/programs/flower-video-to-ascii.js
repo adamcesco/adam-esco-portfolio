@@ -277,7 +277,7 @@ export function main(coord, context, cursor) {
       Math.floor(((coord.y / 2) * ((context.cols / 2) + 1)) + (coord.x / 2)) % favoriteNumber.length
     ];
 
-    const bgChar = (distFromCursor < 1.5 && (coord.x % 2 === 0 && coord.y % 2 === 0)) ? displayChar : ' ';
+    const bgChar = (distFromCursor < 0.65 && (coord.x % 2 === 0 && coord.y % 2 === 0)) ? displayChar : ' ';
 
     return {
       char: bgChar,

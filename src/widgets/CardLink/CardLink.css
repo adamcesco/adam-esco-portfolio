@@ -6,15 +6,17 @@
 
 #card-link {
     height: 66vh;
+    max-height: 66vh;
+    min-height: 66vh;
     width: 33vw;
+    max-width: 33vw;
+    min-width: 33vw;
 
     display: flex;
     flex-direction: column;
     overflow: hidden;
 
     padding-top: 7vh;
-    margin-left: 5vw;
-    margin-right: 5vw;
     border-radius: 5vw;
 
     cursor: pointer;
@@ -33,6 +35,7 @@
 
 #card-link > p {
     font-weight: 100;
+    font-size: 1.3rem;
 }
 
 

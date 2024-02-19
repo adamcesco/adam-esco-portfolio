@@ -281,7 +281,7 @@ export function main(coord, context, cursor) {
 
     return {
       char: bgChar,
-      color: '#9d9d9d',
+      color: '#c7c7c7',
       backgroundColor: '#00000000',
     };
   }

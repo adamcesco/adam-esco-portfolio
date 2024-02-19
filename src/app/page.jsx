@@ -1,7 +1,9 @@
+/* eslint-disable import/extensions */
+/* eslint-disable import/no-unresolved */
 import React from 'react';
 
-// eslint-disable-next-line import/no-unresolved, import/extensions
 import AsciiFlower from '@/widgets/AsciiCalc';
+import CardLink from '@/widgets/CardLink';
 import './page.css';
 
 export default function Home() {
@@ -48,6 +50,14 @@ export default function Home() {
         </div>
         <div id="tutorials-container">
           {/* will contain all the tutorials you have written for your Data Structures class */}
+          <p>
+            I&apos;ve written a few tutorials for my Data Structures class. You can
+            find them below:
+          </p>
+          <CardLink
+            title="Tutorials Folder"
+            description="Google Drive folder"
+          />
         </div>
       </div>
     </>

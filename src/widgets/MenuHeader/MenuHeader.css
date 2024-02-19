@@ -15,7 +15,6 @@
     display: flex;
     justify-content: space-between;
     
-    padding: .8rem;
     border-radius: 2rem;
     background-color: #394c568f;
     backdrop-filter: blur(10px);
@@ -26,4 +25,6 @@
     font-size: 1.2rem;
     color: #ffffff;
     margin: 0 1.5rem;
+    padding-top: .8rem;
+    padding-bottom: .8rem;
 }

@@ -25,7 +25,12 @@ function CardProject({
         </div>
       )
       : (
-        <a href={href} id="card-project">
+        <a
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+          id="card-project"
+        >
           <div>
             <h2>{title}</h2>
             <p>{description}</p>

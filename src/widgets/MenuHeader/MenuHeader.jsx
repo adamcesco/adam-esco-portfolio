@@ -20,7 +20,7 @@ class MenuHeader extends React.Component {
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#tutorials">Tutorials</a>
-        <a href="#contact">Contact</a>
+        <a href="mailto:acescobedo@smu.edu">Email</a>
       </div>
     );
   }

@@ -31,8 +31,9 @@ export default function Home() {
         </div>
       </div>
 
+      <div id="border-div" />
       <div id="continued-section">
-        <div id="about-text-container">
+        <div id="about-container">
           {/* will contain an about me paragraph */}
           <h2 id="about" className="section-header">About Me</h2>
           <p>
@@ -49,10 +50,49 @@ export default function Home() {
             opportunities to learn and grow, and I&apos;m excited to see where my
             career takes me.
           </p>
+          <div id="profile-links-container">
+            <a
+              href="https://www.linkedin.com/in/adamescobedo/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="https://www.instagram.com/adamcesco/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Instagram
+            </a>
+            <a
+              href="https://medium.com/@adamcesco"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Medium
+            </a>
+            <a
+              href="mailto:acescobedo@smu.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              acescobedo@smu.edu
+            </a>
+            <a
+              href="mailto:adamcbedo@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              adamcbedo@gmail.com
+            </a>
+          </div>
         </div>
+
         <div id="experience-timeline-container">
           {/* will be similar to the skill timeline found here: https://www.seanhalpin.xyz/about */}
         </div>
+
         <div id="projects-container">
           <h2 id="projects" className="section-header">Projects</h2>
           <div id="projects-container-flex">

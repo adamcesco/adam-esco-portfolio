@@ -7,6 +7,10 @@ import MenuHeader from '@/widgets/MenuHeader';
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <title>Adam Escobedo&apos;s Portfolio</title>
+        <link rel="icon" href="/images/favicon.png" />
+      </head>
       <body>
         <MenuHeader />
         {children}

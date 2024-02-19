@@ -50,19 +50,25 @@ export default function Home() {
           </p>
         </div>
         <div id="experience-timeline-container">
-          {/* <h2 id="experience" className="section-header">Experience</h2> */}
+          <h2 id="experience" className="section-header">Experience</h2>
           {/* will be similar to the skill timeline found here: https://www.seanhalpin.xyz/about */}
         </div>
         <div id="projects-container">
-          {/* <h2 id="projects" className="section-header">Projects</h2> */}
+          <h2 id="projects" className="section-header">Projects</h2>
           {/* will contain all relevant projects */}
+          <CardLink
+            color="#b0cfbc"
+            title="Profile"
+            description="GitHub"
+            src="/images/github-art.png"
+          />
         </div>
 
         <h2 id="tutorials" className="section-header">Tutorials</h2>
         <div id="tutorials-container">
           {/* will contain all the tutorials you have written for your Data Structures class */}
-          <div>
-            <p id="tutorials-text-container">
+          <div id="tutorials-text-container">
+            <p id="tutorials-text">
               I&apos;ve written a few tutorials for my Data Structures class, but
               they can help anyone coding in C++ on VS Code. These tutorials have
               been edited and kept up to date by the other Data Structure TAs and
@@ -79,6 +85,7 @@ export default function Home() {
             color="#bde0f9"
             title="Tutorials Folder"
             description="Google Drive"
+            src="/images/document-art.png"
           />
         </div>
       </div>

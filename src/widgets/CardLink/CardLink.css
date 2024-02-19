@@ -47,4 +47,5 @@
     left: 5vw;
 
     object-fit: contain;
+    border-radius: 2rem;
 }

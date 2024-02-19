@@ -22,7 +22,12 @@ class CardLink extends React.Component {
   };
 
   render() {
-    const { color, title, description } = this.props;
+    const {
+      color,
+      title,
+      description,
+      src,
+    } = this.props;
     const { isHovered } = this.state;
 
     return (
@@ -44,8 +49,8 @@ class CardLink extends React.Component {
         <h2>{title}</h2>
         <p>{description}</p>
         <img
-          src="/images/document-art.png"
-          alt="Document clip art"
+          src={src}
+          alt={title}
           style={{
             transform: isHovered ? 'translateY(17px)' : 'none',
             transition: 'transform 0.4s ease',
@@ -60,6 +65,7 @@ CardLink.propTypes = {
   color: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
+  src: PropTypes.string.isRequired,
 };
 
 export default CardLink;

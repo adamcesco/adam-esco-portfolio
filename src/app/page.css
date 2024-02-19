@@ -116,6 +116,10 @@ container route {
     width: 100%;
 }
 
+#tutorials-text-container {
+    margin-right: 3vw;
+}
+
 #tutorials-container ul {
     margin: 5vh;
 }
@@ -125,6 +129,6 @@ container route {
 }
 
 .section-header {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    margin-top: 7rem;
+    margin-bottom: 2rem;
 }

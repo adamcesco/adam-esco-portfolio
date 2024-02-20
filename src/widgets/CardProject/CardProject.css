@@ -1,5 +1,6 @@
 #card-project {
     height: 33%;
+    max-height: 33%;
 
     display: flex;
     justify-content: space-between;

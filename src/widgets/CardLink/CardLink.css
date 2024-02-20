@@ -1,15 +1,15 @@
 #card-link {
-    height: 66vh;
-    max-height: 66vh;
-    min-height: 66vh;
-    width: 33vw;
-    max-width: 33vw;
-    min-width: 33vw;
+    height: 100%;
+    max-height: 33rem;
+
+    width: 33rem;
+    max-width: 80vw;
 
     display: flex;
     flex-direction: column;
     overflow: hidden;
 
+    margin-bottom: 2rem;
     padding-top: 7vh;
     border-radius: 5vw;
 

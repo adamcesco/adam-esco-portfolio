@@ -147,16 +147,18 @@ container route {
 #projects-container-flex {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 #project-links-container {
-    width: 100%;
+    width: 40rem;
+    max-width: 80vw;
 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
-    margin-left: 5vw;
 }
 
 /* ---------------- tutorials section ---------------- */
@@ -165,11 +167,13 @@ container route {
     width: 100%;
     
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    justify-content: space-evenly;
 }
 
 #tutorials-text-container {
-    margin-right: 5vw;
+    width: 40rem;
+    max-width: 80vw;
 }
 
 #tutorials-container ul {

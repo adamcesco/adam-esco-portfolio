@@ -9,10 +9,8 @@ import './page.css';
 
 export default function Home() {
   return (
-    <>
-      <div id="ascii-flower-container">
-        <AsciiFlower />
-      </div>
+    <div id="all-content-container">
+      <AsciiFlower />
       <div id="welcome-section">
         <div id="welcome-text-div">
           <h1 className="welcome-name">
@@ -152,6 +150,6 @@ export default function Home() {
           />
         </div>
       </div>
-    </>
+    </div>
   );
 }

@@ -18,16 +18,15 @@ container route {
     src: url('/fonts/HelveticaNeue-Regular.otf') format('opentype');
 }
 
-#ascii-flower-container {
-    height: 100vh;
+#all-content-container {
     width: 100%;
-
-    position: fixed;
-    z-index: 0;
+    max-width: 100rem;
+    margin: 0 auto;
 }
 
 #welcome-section {
     height: 98vh;
+    max-height: 50rem;
     width: 100%;
     
     display: flex;
@@ -53,7 +52,7 @@ container route {
     display: flex;
     flex-direction: column;
 
-    background-color: #f5f7f8;    
+    background-color: #f5f7f8;
     padding: 1.5rem;
     border-radius: 1.2rem;
     border-style: solid;

@@ -64,7 +64,7 @@ export default function Home() {
               Instagram
             </a>
             <a
-              href="https://medium.com/@adamcesco"
+              href="https://medium.com/@acescobedo"
               target="_blank"
               rel="noopener noreferrer"
             >

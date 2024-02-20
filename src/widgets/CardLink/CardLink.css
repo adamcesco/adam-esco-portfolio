@@ -9,9 +9,11 @@
     flex-direction: column;
     overflow: hidden;
 
+    margin-left: 2rem;
+    margin-right: 2rem;
     margin-bottom: 2rem;
-    padding-top: 7vh;
-    border-radius: 5vw;
+    padding-top: 3rem;
+    border-radius: 4rem;
 
     cursor: pointer;
 }

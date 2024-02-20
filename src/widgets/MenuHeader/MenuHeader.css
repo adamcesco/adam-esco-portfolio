@@ -5,6 +5,8 @@
 }
 
 #menu-header {
+    width: fit-content;
+    max-width: 90vw;
     z-index: 3;
     
     position: fixed;
@@ -13,7 +15,7 @@
     transform: translate(-50%, 0%);
     
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     
     border-radius: 2rem;
     background-color: #394c568f;
@@ -22,9 +24,7 @@
 
 #menu-header > a {
     font-family: HelveticaNeue-Medium;
-    font-size: 1.2rem;
+    font-size: min(4vw, 1.2rem);
     color: #ffffff;
-    margin: 0 1.5rem;
-    padding-top: .8rem;
-    padding-bottom: .8rem;
+    padding: min(3vw, 0.8rem);
 }

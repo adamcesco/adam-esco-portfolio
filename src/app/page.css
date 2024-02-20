@@ -43,11 +43,13 @@ container route {
 }
 
 #welcome-text-div {
+    max-width: 80vw;
+    
     position: relative;
 
     z-index: 2;
 
-    left: 3vw;
+    margin-left: min(10vw, 3rem);
     
     display: flex;
     flex-direction: column;

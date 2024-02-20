@@ -67,12 +67,13 @@ container route {
     margin-top: .3rem;
     
     font-family: NueueHelvetica-Regular;
-    font-size: 4rem;
+    font-size: min(4rem, 8vw);
 }
 
 #welcome-text-div > .description {
     color: #4b494d;
     margin-top: 2rem;
+    font-size: min(1.3rem, 5vw);
 }
 
 /* ---------------- continued section ---------------- */
